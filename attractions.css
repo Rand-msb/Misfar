@@ -1,0 +1,252 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+html {
+    background-color: #fdfbf8;
+    font-family: 'Raleway', sans-serif;
+}
+.breadcrumb {
+    padding: 10px;
+}
+
+.breadcrumb ol {
+    list-style-type: none;
+    display: flex;
+}
+
+.breadcrumb li:not(:last-child):after {
+    content: "/";
+    color: #c4c4c4;
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.breadcrumb a {
+    color: #653E8C;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline
+}
+
+a[aria-current="page"] {
+    color: #333;
+    text-decoration: none;
+}
+
+a[aria-current="page"]:hover {
+    text-decoration: none;
+}
+
+
+
+
+.centered {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container2 {
+    position: relative;
+   
+   
+
+  }
+
+.attractions-container{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	flex-wrap: nowrap;
+    gap:87px;
+    margin-left: 135px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.tb-isotop-item:hover .tb-hover{
+    opacity: 1;
+}
+.tb-isotop-item .tb-hover{
+    transition: opacity .4s ease-in-out;
+}
+.tb-isotop-item .tb-hover{
+    opacity:0;
+    background-color: #0000007d;
+    color:#fff;
+    cursor: pointer;
+    height: 32%;
+
+}
+.tb-isotop-item .tb-hover .fillet-bold::after{
+content: '';
+display: block;
+width: 1px;
+height: 60%;/*black line height*/
+background: #18100a;
+margin: -207px auto 0;/* color box height*/
+margin-left: 125px;/* for the black line*/
+
+}
+
+.fillet-bold::after{
+    color: #fff;
+    mix-blend-mode: difference;
+}
+.tb-image-box.tb-style2.tb-image-link{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.tb-image-box.tb-style2 a{
+   cursor:none;
+}
+.grid-tags{
+    margin-top:220px;
+}
+
+a{
+    color:inherit ;
+    background-color: transparent;
+    transition: all .3s ease;
+}
+.container{
+    padding-top: 1px;
+    margin-top: -1px;
+
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    height: 100%;
+}
+.my-5{
+    margin-bottom: 3ren !important;
+}
+.col-12{
+    -webkit-box-flex: 0;
+}
+.col-12{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 100%;
+}
+.tb-isotop-item .tb-hover .h3{
+    transition:padding-bottom .2s ease-in-out;
+    padding-bottom: 0px;
+    margin: 1px;
+}
+.fillet-bold{
+    font-family: domaine extrabold;
+    text-transform: uppercase;
+}
+.h3{
+    font-size: 18px;/* riyadh text size*/
+}
+.h3{
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    margin-left: 9px; /* for riyadh too*/
+    height: 100%;
+    text-align: center;
+}
+.tb-isotop-item .tb-hover .tb-grid-tags{
+    color: #18100a;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+.tb-image-box.tb-style2.tb-image-link::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top:0;
+    z-index: 1;
+    background: #000;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.tb-relative{
+    position: relative;
+}
+.tb-radious-4{
+    border-radius: 4px;
+    overflow: hidden;
+}
+.tb-border{
+    border: 1px solid #eaeaea;
+}
+.width-100{
+    width: 285px;
+}
+.heigth-100{
+    height: 100;
+}
+.z-10{
+    z-index: 10;
+}
+.tb-absolute{
+    position: absolute;
+}
+.align-items-center{
+    -webkit-box-align: center !important;
+}
+.d-flex{
+    display: flex !important;
+}
+* ::after{
+    box-sizing: border-box;
+}
+* ::before{
+    box-sizing: border-box; 
+}
+
+div{
+    display: block; 
+}
+small{
+    margin-left:2px;
+    font-size: 18px;
+    color: #fdfbf8;
+}
+footer {
+    box-shadow: #959da533 0px 0px 10px 0px;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+}
+.header {
+    top: 0;
+    left: 0;
+    background: #fdfbf8;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    padding: 1rem 9%;
+    z-index: 10;
+}
+
+.header.logo {
+    font-size: 1rem;
+}
+body{
+    background-color: #fdfbf8;
+    margin: 0px;
+}

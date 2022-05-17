@@ -1,0 +1,455 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+/*******Header********/
+body {
+    background-color: #fdfbf8;
+}
+
+/******* catagories *********/
+.title-wrap {
+    margin-top: 30px;
+    text-align: center;
+    padding: 1.4rem 0;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.lg-title {
+    font-size: 1.8rem;
+}
+
+.sm-title {
+    display: block;
+    color: #787878;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.7;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.card {
+    position: relative;
+    left: -6%;
+    width: 300px;
+    height: 370px;
+    transition: 0.3s ease-out;
+    box-shadow: 3px 10px #c3c3c3;
+}
+
+.card .imgbox {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+.card .desc {
+    cursor: pointer;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    background: #503b5f;
+    color: white;
+    text-decoration: none;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card:hover .desc {
+    width: 100%;
+    height: 75%;
+    left: 0;
+    bottom: 0;
+}
+
+.desc p {
+    margin: 10px 0 0;
+    padding: 1em 1em;
+    transform: translateY(2em);
+    line-height: 1.3em;
+    transition: 0.3s;
+    text-align: justify;
+    opacity: 0;
+    font-size: 15px;
+}
+
+.card:hover .desc p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card:hover .desc p h2 {
+    text-align: center;
+
+}
+
+.card :hover {
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.4);
+}
+
+/******* End of catagories*********/
+
+
+
+
+
+
+.popup {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+
+
+}
+
+.active {
+    top: 70%;
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup .form h2 {
+    color: #4a2662;
+    text-align: center;
+    columns: #222;
+    margin: 10px 8px 20px;
+    font-size: 25px;
+}
+
+.popup .form .form-element {
+    margin: 15px 8px;
+}
+
+.popup .form .form-element label {
+    font-weight: 700;
+    font-size: 14px;
+    color: #222;
+    font-weight: 100;
+}
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"] {
+    font-size: 15px;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #cdcdcd;
+    border-radius: 5px;
+}
+
+.popup .form .form-element input[type="submit"] {
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #aa8fbf;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+
+}
+
+.popup .form .form-element input[type="submit"]:hover {
+    background: #2c2531;
+    ;
+
+
+}
+
+.sign-up {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+font-family: 'Raleway', sans-serif;}
+
+/***End of log in css**/
+/******* signup css *********/
+
+.popup-signup {
+    position: fixed;
+
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: white;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+
+
+}
+
+.activesignup {
+    top: 60%;
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+
+}
+
+.popup-signup .closesignup-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup-signup .form2 h2 {
+    color: #4a2662;
+    text-align: center;
+    columns: #222;
+    margin: 10px 8px 20px;
+    font-size: 25px;
+}
+
+.popup-signup .form2 .form-element {
+    margin: 15px 8px;
+}
+
+.popup-signup .form2 .form-element input[type="text"],
+.popup-signup .form2 .form-element input[type="email"],
+.popup-signup .form2 .form-element input[type="text"],
+.popup-signup .form2 .form-element input[type="password"] {
+
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #cdcdcd;
+    border-radius: 5px;
+    font-size: 15px
+}
+
+.popup-signup .form2 .form-element input[type="submit"] {
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #aa8fbf;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+
+}
+
+
+.logButton:hover {
+    background: #2c2531;
+    ;
+
+
+}
+
+.registerd {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+font-family: 'Raleway', sans-serif;}
+
+/******* End of signup css *********/
+
+
+
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    display: flex;
+
+}
+
+.activeh {
+    background-color: #fdfbf8;
+
+}
+
+body {
+    background-color: #fdfbf8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+header .logo1 {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content {
+    text-align: center;
+}
+
+.home .content h3 {
+    font-size: 4.5rem;
+    color: #fdfbf8;
+    text-transform: uppercase;
+}
+
+.home .content p {
+    font-size: 2.5rem;
+    color: #fdfbf8;
+    padding: .5rem 0;
+}
+
+.home .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pinvid {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 10px;
+font-family: 'Raleway', sans-serif;}
+
+
+
+
+/***footer csss*/
+footer {
+    box-shadow: #959da533 0px 0px 10px 0px;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+}
