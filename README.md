@@ -20,9 +20,9 @@ tourists to visit
 
 
 ## Authors
-Manar Bin Muatieb(https://github.com/ManarMutaieb)
-Ghadeer AlMaymoon(https://github.com/ghadeerAbdulmajeed)
-Dhai AlMurshed(https://github.com/Dhaialmurshed)
-Randa bakhashwain(https://github.com/Rand-msb)
+- Manar Bin Muatieb(https://github.com/ManarMutaieb)
+- Ghadeer AlMaymoon(https://github.com/ghadeerAbdulmajeed)
+- Dhai AlMurshed(https://github.com/Dhaialmurshed)
+- Randa bakhashwain(https://github.com/Rand-msb)
 
  
